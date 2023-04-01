@@ -7,7 +7,7 @@ const ratingButtons = document
   .getElementsByTagName("button");
 
 function select(e) {
-  ratingButtons.forEach((ratingButton) => {
+  Object.values(ratingButtons).forEach((ratingButton) => {
     ratingButton.classList.remove("select");
   });
   e.target.classList.add("select");

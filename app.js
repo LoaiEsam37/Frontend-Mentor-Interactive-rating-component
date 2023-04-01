@@ -6,16 +6,8 @@ const ratingButtons = document
   .getElementsByClassName("card__btns")[0]
   .getElementsByTagName("button");
 
-function select(e) {
-  Object.values(ratingButtons).forEach((ratingButton) => {
-    ratingButton.classList.remove("select");
-  });
-  e.target.classList.add("select");
-}
-
 Object.values(ratingButtons).forEach((e) => {
   e.addEventListener("click", () => {
-    select(e)
     ratingSpan.innerHTML = e.innerHTML;
     submitButton.addEventListener("click", () => {
       ratingState.classList.add("hidden");

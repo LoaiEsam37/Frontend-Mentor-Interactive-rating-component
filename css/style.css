@@ -97,7 +97,7 @@ img {
   cursor: pointer;
 }
 
-#rating--state .card__btns button:focus {
+.select {
   background-color: #7c8898;
   color: #ffffff;
 }

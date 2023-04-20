@@ -8,6 +8,10 @@ const ratingButtons = document
 
 Object.values(ratingButtons).forEach((e) => {
   e.addEventListener("click", () => {
+    Object.values(ratingButtons).forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    e.classList.add("active");
     ratingSpan.innerHTML = e.innerHTML;
     submitButton.addEventListener("click", () => {
       ratingState.classList.add("hidden");

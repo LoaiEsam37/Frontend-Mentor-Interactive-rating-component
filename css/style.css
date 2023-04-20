@@ -97,10 +97,6 @@ img {
   cursor: pointer;
 }
 
-#rating--state .card__btns button:focus {
-  background-color: #7c8898;
-  color: #ffffff;
-}
 
 #rating--state #submit__rating {
   background-color: hsl(25, 97%, 53%);
@@ -166,8 +162,12 @@ img {
   text-align: center;
 }
 
-
 /* javascript classes */
 .hidden {
   display: none !important;
+}
+
+.active {
+  background-color: #7c8898 !important;
+  color: #ffffff !important;
 }
